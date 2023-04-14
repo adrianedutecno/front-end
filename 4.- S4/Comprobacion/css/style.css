@@ -1,0 +1,108 @@
+/* Pantalla menos de 500px */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.rosado {
+  background-color: pink;
+  height: 200px;
+}
+
+.verde {
+  background-color: green;
+  height: 200px;
+}
+
+.azul {
+  background-color: blue;
+  height: 100px;
+}
+
+.rojo {
+  background-color: red;
+  height: 200px;
+  display: none;
+}
+
+.morado {
+  background-color: blueviolet;
+  height: 200px;
+  display: none;
+}
+
+.gris {
+  background-color: grey;
+  height: 200px;
+}
+/* Pantalla entre 501 px y 750 px */
+
+@media (min-width: 501px) and (max-width: 750px) {
+
+  .rojo {
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: -5px;
+  }
+
+  .azul {
+    height: 200px;
+  }
+
+  .verde,
+  .azul,
+  .rojo {
+    display: inline-block;
+    width: 33%;
+  }
+
+  .verde {
+    width: 32%;
+  }
+
+
+
+
+  .morado {
+    display: inline-flex;
+    width: 59%;
+    height: 300px;
+  }
+
+  .gris {
+    display: inline-flex;
+    width: 40%;
+    height: 300px;
+  }
+}
+
+
+
+
+/*Pantalla sobre 751 px*/
+
+@media (min-width: 751px) {
+
+  .rosado {
+    height: 40px;
+  }
+
+  .azul {
+    height: 300px;
+  }
+
+  .rojo,
+  .morado,
+  .gris {
+    display: inline-block;
+    width: 33%;
+    float: left;
+
+  }
+
+  .gris {
+    width: 34%;
+  }
+}

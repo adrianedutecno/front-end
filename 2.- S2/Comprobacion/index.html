@@ -1,0 +1,43 @@
+<!-- Creando un comentario en HTML -->
+<!-- HTML:5 Genera estructura basica automaticamente-->
+<!DOCTYPE html> <!-- Siempre incluye etiqueta DOCTYPE e indica el tipo de archivo-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prueba Formulario</title>
+    <!--Enlace hacia la pagina de estilo de boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body><!-- etiqueta de apertura del body-->
+    
+    <!--Titulo del Formulario-->
+    <h1>FORMULARIO</h1>
+    <!--Inicio del Formulario-->
+    <form action="">
+        <label for="">NOMBRE</label><br>
+        <input type="text" name="nombre" required><br><br>
+        <label for="">DIRECCIÓN</label><br>
+        <input type="text" name="direccion" required><br><br>
+        <label for="">ESPECIALIDAD MEDICA</label><br>
+        <input type="text" name="especialidad" list="especialidades" required><br><br>
+        <datalist id="especialidades">
+            <option value="MEDICINA INTERNA">
+            <option value="MEDICINA GENERAL">
+            <option value="TRAUMATOLOGIA">
+            <option value="NUTRICIONISTA"></option>
+        </datalist>
+        <label for="">FECHA</label><br>
+        <input type="date" name="fecha" required><br><br>
+        <label for="">HORA</label><br>
+        <input type="time" name="hora" required><br><br>
+        <label for="">CORREO</label><br>
+        <input type="email" name="correo" required><br><br>
+        <!--boton para confirmar-->
+        <input type="button" value="CONFIRMAR">
+    </form>
+
+    <!--Javascript o bootstrap bundle, bootstrap popper-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body> <!-- etiqueta de cierre-->
+</html>

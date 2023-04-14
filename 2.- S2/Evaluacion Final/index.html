@@ -1,0 +1,138 @@
+<!-- Creando un comentario en HTML -->
+<!-- HTML:5 Genera estructura basica automaticamente-->
+<!DOCTYPE html> <!-- Siempre incluye etiqueta DOCTYPE e indica el tipo de archivo-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nimrodel Pub Restaurant</title>
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha384- UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!--Enlace hacia la pagina de estilo de boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body><!-- etiqueta de apertura del body-->
+    <!-- barra de navegacion o navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-image: url('./img/shop.jpeg')">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Bootcamp</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nuestros Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#comuniquemonos">Comuniquemonos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reserva">Reserva</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Seccion Titulo Pagina-->
+    <section>
+        <h1>Nimrodel Pub Restaurant</h1>
+    </section>
+
+    <!--Contenido-->
+    <main>
+        <!--Destacados de la semana-->
+        <h2>Destacados de la semana</h2>
+        <section>
+            <div style="background-color: aqua;">
+                <img src="./img/bebidas.jpg" alt="bebidas" style="width: 500px;">
+            </div>
+            <div>
+                <h4>GASEOSAS</h4>
+            </div>
+            <div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, eligendi expedita dolorum impedit, repudiandae cupiditate nam consectetur doloribus repellat animi officiis nostrum iste odio sunt voluptatem provident soluta. Molestias, beatae.</p>
+            </div>
+        </section>
+        <section>
+            <div style="background-color: chocolate">
+                <img src="./img/tablas.jpg" alt="bebidas" style="width: 500px;">
+            </div>
+            <div>
+                <h4>TABLAS</h4>
+            </div>
+            <div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, eligendi expedita dolorum impedit, repudiandae cupiditate nam consectetur doloribus repellat animi officiis nostrum iste odio sunt voluptatem provident soluta. Molestias, beatae.</p>
+            </div>
+        </section>
+        <section>
+            <div style="background-color: darkgreen">
+                <img src="./img/shop.jpeg" alt="bebidas" style="width: 500px;">
+            </div>
+            <div>
+                <h4>SHOP CERVEZAS</h4>
+            </div>
+            <div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, eligendi expedita dolorum impedit, repudiandae cupiditate nam consectetur doloribus repellat animi officiis nostrum iste odio sunt voluptatem provident soluta. Molestias, beatae.</p>
+            </div>
+        </section>
+    </main>
+
+    <!--formulario contacto-->
+    <section id="comuniquemonos">
+        <form action="">
+            <label for="nombre">Nombre</label>
+            <input type="text" required pattern="^[a-zA-Z\s]+$"><br><br>
+            <label for="correo">Correo</label>
+            <input type="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br><br>
+            <label for="telefono">Teléfono</label>
+            <input type="text" required pattern="^[0-9]{9}$" size="9" maxlength="9"><br><br>
+            <label for="motivo">Motivo</label>
+            <input type="text" list="motivoList">
+            <datalist id="motivoList">
+               <option value="Felicitaciones"></option>
+               <option value="Reclamos"></option>
+               <option value="Consultas"></option>
+               <option value="Sugerencias"></option>
+            </datalist><br><br>
+            <textarea name="" id="" cols="30" rows="3"></textarea><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <!--formulario reserva-->
+    <section id="reserva">
+        <form action="">
+            <label for="nombre">Nombre</label>
+            <input type="text" required pattern="^[a-zA-Z\s]+$"><br><br>
+            <label for="correo">Correo</label>
+            <input type="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br><br>
+            <label for="telefono">Teléfono</label>
+            <input type="number" required pattern="^[0-9]{9}$" size="9" maxlength="9"><br><br>
+            <label for="fecha">Fecha</label>
+            <input type="date" required><br><br>
+            <label for="tiempo"></label>
+            <input type="time" required><br><br>
+            <label for="asistentes">Cantidad de Asistentes</label>
+            <input type="number" required>
+            <input type="submit" value="Reservar">
+        </form>
+    </section>
+
+    <!--pie de pagina o footer-->
+    <footer>
+        <p>Todos los derechos reservados <i class="fa-solid fa-registered"></i></p>
+    </footer>
+
+    <!--Javascript o bootstrap bundle, bootstrap popper-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body> <!-- etiqueta de cierre-->
+</html>
