@@ -16,17 +16,38 @@ $(document).ready(function(){
         }
         
         //Fetch api o peticion para obtener las frases
-        fetch(`https://studio-ghibli-films-api.herokuapp.com/api/${busqueda}`)
-            .then(response => response.json())//se obtiene el json de la respuesta
-            .then(data => {
-                console.log(data)
-                // filtrado
-                // recorrido
+        fetch(`https://studio-ghibli-films-api.herokuapp.com/api/`)
+                    .then(response => response.json())
+                    .then(data => {
+                             // Check if data is an object
+                            if (typeof data === 'object' && !Array.isArray(data)) {
+                                // Convert object properties to array of values
+                                var dataArray = Object.values(data);
+                                // Filter fetched data based on input value
+                                var filteredData = dataArray.filter(film => film.title.toLowerCase().includes(busqueda.toLowerCase()));
+                                console.log(filteredData)
+                                filteredData.forEach(film => {
+                                    tarjeta(film)
+                                });
 
-                //llamada a la funcion
-             }).catch(error => console.log(error))
+                                // tarjeta(filteredData)
+                            }
+                    });
 
              //funcion para inyectar datos en la tarjeta
+             function tarjeta(params) {
+                document.getElementById("tarjeta").innerHTML = ""
+                document.getElementById("tarjeta").innerHTML +=
+                `
+                <div class="card col-sm-12 col-md-6 mx-auto" style="width: 18rem;">
+                    <img src="${params.poster}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <p style="text-align:center; font-size:25px; color:red" class="card-text"></p>
+                    <p style="text-align:center; color:green; font-weight:bold" class="card-text"></p>
+                    </div>
+                </div>
+                `
+             }
     });
 
 })
