@@ -19,11 +19,11 @@ $(document).ready(function(){
         fetch(`https://studio-ghibli-films-api.herokuapp.com/api/`)
                     .then(response => response.json())
                     .then(data => {
-                             // Check if data is an object
+                             // check si data es un objeto o un array
                             if (typeof data === 'object' && !Array.isArray(data)) {
-                                // Convert object properties to array of values
+                                //convierte data en un array
                                 var dataArray = Object.values(data);
-                                // Filter fetched data based on input value
+                                // se filtra las peliculas que coincidan con la busqueda
                                 var filteredData = dataArray.filter(film => film.title.toLowerCase().includes(busqueda.toLowerCase()));
                                 console.log(filteredData)
                                 filteredData.forEach(film => {
