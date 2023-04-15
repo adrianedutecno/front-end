@@ -1,5 +1,6 @@
 //consumiendo datos con fetch api
 //declaracion para que se ejecute el javascript luego de que este cargado el documento
+document.addEventListener('DOMContentLoaded', function() { });
 $(document).ready(function(){
 
     //agregar accion o evento click
