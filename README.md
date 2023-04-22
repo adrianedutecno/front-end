@@ -17,13 +17,10 @@ Mira **Deployment** para conocer como desplegar el proyecto.
 _Que cosas necesitas para instalar el software y como instalarlas_
 
 ```
-Visual Studio Code, PyCharm
+Visual Studio Code
 ```
 ```
 Git, Github
-```
-```
-variables de entorno para python
 ```
 ### Instalación 🔧
 
