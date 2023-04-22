@@ -1,4 +1,4 @@
-# Modulo Front-End 1, fundamentos de Front-End
+# Modulo Front-End, fundamentos del desarrollo Front-End
 
 _Proyectos que permiten la ejemplificación de códigos de baja complejidad.
 
