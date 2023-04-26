@@ -2,7 +2,7 @@
 
 _Proyectos que permiten la ejemplificación de códigos de baja complejidad.
 
-* HTML, CSS, JavaScript, Bootstrap, JQuery, Media queries
+* HTML, CSS, JavaScript, Bootstrap, JQuery, Media Queries
 _
 
 ## Comenzando 🚀
