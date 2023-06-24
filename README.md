@@ -1,16 +1,15 @@
-# Modulo Front-End, fundamentos del desarrollo Front-End
+# Módulo Front-End, fundamentos del desarrollo Front-End
 
 _Proyectos que permiten la ejemplificación de códigos de baja complejidad.
 
 * HTML, CSS, JavaScript, Bootstrap, JQuery, Media Queries
-_
+  _
 
 ## Comenzando 🚀
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
 Mira **Deployment** para conocer como desplegar el proyecto.
-
 
 ### Pre-requisitos 📋
 
@@ -19,9 +18,11 @@ _Que cosas necesitas para instalar el software y como instalarlas_
 ```
 Visual Studio Code
 ```
+
 ```
 Git, Github
 ```
+
 ### Instalación 🔧
 
 ```
